@@ -13,4 +13,4 @@ HHA 504 week 2 assignment
 
 # Deployed URL 
 
-[Click here for deployed Link](joyce-504-flask.azurewebsites.net)
+<joyce-504-flask.azurewebsites.net>
