@@ -13,13 +13,19 @@ def mainpage():
 
 @app.route('/about')
 def aboutpage():
-        return render_template('about.html')
+    return render_template('about.html')
 
 @app.route('/random')
 def randomstuff():
     number_var = random.randint(1,10000)
     fake_address = faker.address()
     return render_template('random.html', single_number = number_var, single_address = fake_address)
+
+@app.route('/data')
+def datapage():
+    df = pd.read_csv('dataset/ramen-ratings.csv')
+    print(df.columns)
+    return render_template('data.html', data=df)
         
 if __name__ == '__main__':
     app.run(
