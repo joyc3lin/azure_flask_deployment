@@ -9,7 +9,8 @@ HHA 504 week 2 assignment
 
 1. create an app.py file that will hold the main application code.
 
->from flask import Flask, render_template
+<code>
+from flask import Flask, render_template
 import pandas as pd
 import random
 from faker import Faker
@@ -43,6 +44,7 @@ if __name__ == '__main__':
         debug=True,
         port=8080
     )
+</code>
 
 ***
 
